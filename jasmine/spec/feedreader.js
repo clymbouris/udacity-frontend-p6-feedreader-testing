@@ -33,7 +33,9 @@ $(function() {
          */
          it('should have a url defined for each feed', function() {
             allFeeds.forEach(function(feed) {
+                // Test 1: Check that a url for each feed is defined
                 expect(feed.url).toBeDefined();
+                // Test 2: Check that the url string is not empty
                 expect(feed.url.length).not.toBe(0);
             });
          });
@@ -44,7 +46,9 @@ $(function() {
          */
          it('should have a name defined and not empty', function() {
             allFeeds.forEach(function(feed) {
+                // Test 1: Check that a name is defined for each feed
                 expect(feed.name).toBeDefined();
+                // Test 2: Check that the name string is not empty
                 expect(feed.name.length).not.toBe(0);
             });
          });
@@ -63,6 +67,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
          it('should be hidden by default', function() {
+            // Test: Ensure the menu is hidden by default
             expect(body.hasClass('menu-hidden')).toBe(true);
          });
 
@@ -73,10 +78,10 @@ $(function() {
           */
           it('should trigger visibility when clicked', function() {
             var menuIcon = $('.menu-icon-link');
-            // Trigger click to display menu
+            // Test 1: Check if triggering click displays the menu
             menuIcon.trigger('click');
             expect(body.hasClass('menu-hidden')).toBe(false);
-            // Trigger click to hide menu
+            // Test 2: Check if triggering click hides the menu
             menuIcon.trigger('click');
             expect(body.hasClass('menu-hidden')).toBe(true);
           });
@@ -99,6 +104,7 @@ $(function() {
          });
 
          it('should have at least a single feed entry element after load', function(done) {
+            // Test: Check if there's at least one entry element in the feed container
             expect($('.feed .entry').length).toBe(true);
             done();
          });
@@ -123,6 +129,7 @@ $(function() {
          it('should change content when new feed loads', function(done) {
             // Call the next feed and compare html content with initial feed after done
             loadFeed(1, function() {
+                // Test: Check if content changes when loading a new feed
                 var newFeed = $('.feed').html();
                 expect(initialFeed).not.toEqual(newFeed);
                 done();
