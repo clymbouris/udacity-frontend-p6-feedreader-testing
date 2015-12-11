@@ -1,7 +1,5 @@
 # Udacity Project 6: FeedReader Testing
-
-In this project we are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where we come in.
-
+Part of the Front-End Web Developer nanodegree from Udacity. The project utilizes concepts learned from the [JavaScript Testing](https://www.udacity.com/course/viewer#!/c-ud549-nd) course.
 
 ##Usage
 
@@ -11,8 +9,7 @@ git clone git@github.com:d3moid/frontend-feedreader-testing.git
 ```
 
 ##Purpose
-
-Learn the basics of test-driven development using Jasmine test framework.
+In this project we are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where we come in.
 
 ## Tests
 
