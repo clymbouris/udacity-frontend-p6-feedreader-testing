@@ -10,6 +10,10 @@ Clone the repository locally and run `index.html`.
 git clone git@github.com:d3moid/frontend-feedreader-testing.git
 ```
 
+##Purpose
+
+Learn the basics of test-driven development using Jasmine test framework.
+
 ## Tests
 
 1. Loop through each feed in the allFeeds object and ensure it has a URL defined and that the URL is not empty.
